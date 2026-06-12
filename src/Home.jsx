@@ -48,7 +48,7 @@ const Home = () => {
       try {
         setLoading(true);
         const response = await API.get("/treatments");
-        setTreatments(response.data.slice(0, 6));
+        setTreatments(Array.isArray(response.data) ? response.data.slice(0, 6) : []);
       } catch (error) {
         console.error("Error fetching treatments:", error);
         setTreatments([]);
