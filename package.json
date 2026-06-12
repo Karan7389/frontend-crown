@@ -23,9 +23,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "devDependencies": {
+ "dependencies": {
+    ...existing deps...,
     "react-scripts": "5.0.1"
-  },
+},
   "browserslist": {
     "production": [
       ">0.2%",
